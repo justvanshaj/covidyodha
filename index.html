@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="p:domain_verify" content="b0240e78b1ebe8449676e230202eeb41" />
+
+  <title>Covid Yodha</title>
+
+  <meta content="" name="description" />
+
+  <meta content="Shreya Mahajan, Abhinav Maharana, Garvit Sharma, Harit Kharb, CovidYODHA, covid, yodha, NGO" name="keywords" />
+
+  <meta content="index,follow" name="robots" />
+
+  <link rel="icon" href="./assets/img/logo1.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="./assets/vendor/venobox/venobox.css" rel="stylesheet" />
+  <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/popup.css" rel="stylesheet" />
+  <link href="./assets/css/style.css" rel="stylesheet" />
+
+  <!-- ChatBot -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.convform.js"></script>
+  <!-- <script type="text/javascript" src="js/custom.js"></script> -->
+
+
+
+</head>
+
+<body>
+  <!-- <button type="button" onclick="chattogglePopup()" class="chat_icon d-flex align-items-center justify-content-center "
+    data-toggle="modal" data-target="#myModal">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+  </button> -->
+  <div class="chatpopup" id="chatpopup-1">
+    <div class="chatoverlay"></div>
+    <div class="chatcontent">
+      <div class="close-btn" onclick="chatPopup()">×</div>
+
+      <!-- <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://in.pinterest.com/covidyodha/covidyodhaposts/"></a> -->
+
+      <!-- ChatBot -->
+      <!-- <div id="container" class="container">
+        <div id="chat" class="chat">
+          <div id="messages" class="messages"></div>
+          <input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <!-- ChatBot end -->
+  <!-- ======= Header ======= -->
+  <div id="header" class="header fixed-top">
+    <div class="
+          container-fluid container-xl
+          d-flex
+          align-items-center
+          justify-content-between
+        ">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/covidlogo.png" style="margin-left: 8%;" alt="Covid YODHA" />
+        <!-- <span>CovidYodha</span> -->
+      </a>
+
+      <div id="navbar" class="navbar align-items-center">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about1">About</a></li>
+          <li>
+            <a class="nav-link scrollto"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdVIViiAOOmpzqO_OkJxNMz9ACvX2D_oC6i2qjTLT4LWFKOwA/viewform">Volunteer</a>
+          </li>
+          <li><a href="team.html">Team</a></li>
+          <!-- <li><a href="blogs.html">Blog</a></li> -->
+          <li><a class="nav-link scrollto" href="./AdminPanel/AdminLogin/adminlogin.html">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </div>
+      <!-- .navbar -->
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center conte-1">
+          <h1 data-aos="fade-up">Covid Yodha</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">
+            <b>"Small acts of kindness when multiplied by millions of people can transform the world."</b><br /><br />
+
+            covidYODHA is an NGO that is determined to choose humanity and believes that the sole meaning of life is to
+            serve others in need. With this agenda, we've built up a team and, more than that, a family to help us
+            succeed in this mission of serving humanity. Even though this pandemic brought out our strength, abilities,
+            and skills, we even saw how it uprooted the lives of many and left them hopeless. Thus, we aim to provide
+            everyone around us with the support necessary during these unprecedented times and give them a ray of hope
+            not to give up. We welcome you into our family of covidYODHA, and we hope that together, we can overcome
+            this darkness and bring light into our world again.
+
+          </h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#portfolio" class="
+                    btn-get-started
+                    scrollto
+                    d-inline-flex
+                    align-items-center
+                    justify-content-center
+                    align-self-center
+                  ">
+                <span>Get Started</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="./assets/img/hero-img1.png" class="img-fluid" id="image-fluide" alt="Covid YODHA">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+    <div class="container-model">
+      <!-- Button trigger modal -->
+      <button type="button" onclick="togglePopup()"
+        class="back-to-top1 d-flex align-items-center justify-content-center" data-toggle="modal"
+        data-target="#myModal">
+        <i class="fab fa-pinterest"></i>
+      </button>
+
+      <!-- <a
+          class="back-to-top1 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#myModal"
+        >
+          <i class="fab fa-pinterest"></i>
+        </a> -->
+
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">CodeKaze'21</h4>
+              <button onclick="myFunction()" type="button" class="close" data-dismiss="modal"><i
+                  class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <div class="row">
+                  <br>
+                  <br>
+                  <div class="col-12">
+                    <div class="modal-item" data-aos="zoom-in">
+                      <!-- <img src="assets/img/codekaze2021.jpeg" class="img-fluid" alt=""> -->
+                      <div class="modal-info">
+                        <a class="button" href="http://bit.ly/CNCodeKaze"
+                          style="display:inline-block;text-decoration:none;background: linear-gradient(to right,rgb(255,127,80,0.8),rgb(255,140,0,0.8),rgb(255,165,0,0.8));color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:5%;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+                          target="_blank">Register Now!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+          <div class="col-lg-6 d-flex align-items-center about-img-1" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/about-img.png" class="img-fluid" alt="Covid YODHA" id="image-fluide" />
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content" style="margin-top: 90px;">
+              <!-- <h3>Who We Are</h3> -->
+              <h2>What We Do?</h2>
+              <p>
+                The COVID-19 pandemic has greatly affected all of society, including teams in organizational settings.
+                Collaborative teamwork is particularly susceptible to pandemic disruptions, as coordination across
+                individuals becomes challenging in socially distanced and virtual contexts. So we at covidYODHA are here
+                with our most sedulous care to provide with the information and necessities which help to bridge the gap
+                between knowledge and action; with:<br /><br />
+                <i class="fas fa-arrow-right"></i> Informative blogs concerning subjects (doubts/ myths/information)
+                regarding Covid-19<br /><br />
+                <i class="fas fa-arrow-right"></i> Podcasts and interviews with our respected frontline
+                workers.<br /><br />
+                <i class="fas fa-arrow-right"></i> We help you find the verified leads for anything in need: oxygen
+                cylinders, bed availability, medicines, plasma donors, and many more resources.<br /><br />
+                <i class="fas fa-arrow-right"></i> We are actively trying to solve your doubts regarding COVID-19 on our
+                social media platforms.<br /><br />
+                <b>We are here with our efforts to help all the people across our nation in an arduous journey. We will
+                  be grateful and welcoming for your volunteering with us to make our world better again.</b><br />
+              </p>
+              <!-- <div class="text-center text-lg-start">
+                  <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About1 Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about1" style="background: white" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <!-- <h3>Who We Are</h3> -->
+              <h2>About us</h2>
+              <p>
+                Since our formation on 10th May 2021, we at Covid YODHA have been putting our blood & sweat for
+                procurement of necessities in COVID-19 like:-<br>
+                <i class="fas fa-arrow-right"></i> <b>Oxygen Cylinders</b><br>
+                <i class="fas fa-arrow-right"></i> <b>Beds</b><br>
+                <i class="fas fa-arrow-right"></i> <b>Contacting Plasma donors</b><br>
+                <i class="fas fa-arrow-right"></i> <b>Home ICUs</b><br>
+                <i class="fas fa-arrow-right"></i> <b>Home Nurses</b><br>
+                <i class="fas fa-arrow-right"></i> <b>resources</b><br>
+                <br><br>
+
+                <b>OUR VISION:</b><br>
+
+                “UNITED TO BEAT COVID-19”<br>
+                We at Covid YODHA strongly believe that with integrity, consciousness and constructive mindset, we will
+                triumph to exterminate COVID-19.<br><br>
+
+
+                <b>OUR MISSION:</b><br>
+
+                Making India <b>"MASK-FREE"</b><br>
+                Helping in escalating the awareness and positivity during the uncertain times.<br>
+                Assisting people needlessly in any way possible.<br>
+                Take the edge of the fallacies and misconceptions pertaining to the virus.<br>
+
+                We have been providing food resources to the needy people in lockdown and also working on procurement of
+                medical resources in many cities.Our journey to serve mankind will not halt till the extermination of
+                COVID-19.<br>
+
+              </p>
+              <!-- <div class="text-center text-lg-start">
+                  <a href="about.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/aboutus 2.jpg" style="margin-left:40px;" class="img-fluid" id="image-fluide"
+              alt="Covid YODHA" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About1 Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <!-- <h2>Portfolio</h2> -->
+          <p>Important Links You Might Need.</p>
+        </header>
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/news.jpg" class="img-fluid" alt="Covid YODHA" />
+              <div class="portfolio-info">
+                <h4>COVID Latest News</h4>
+                <div class="portfolio-links">
+                  <a href="News.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/oxygen-cylinder.jpg" class="img-fluid" alt="Covid YODHA" />
+              <div class="portfolio-info">
+                <h4>Oxygen Cylinder Details</h4>
+                <div class="portfolio-links">
+                  <a href="oxygen.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/vaccne.jpg" class="img-fluid" alt="Covid YODHA" />
+              <div class="portfolio-info">
+                <h4>Vaccine Availability Details</h4>
+                <div class="portfolio-links">
+                  <a href="https://covidtracker1804.herokuapp.com/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/magazine.jpg" class="img-fluid" alt="Covid YODHA" />
+              <div class="portfolio-info">
+                <h4>Magazine</h4>
+
+                <div class="portfolio-links">
+
+                  <a href="magazine.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img style="height: 296px" src="assets/img/portfolio/bed.jpeg" class="img-fluid" alt="Covid YODHA" />
+              <div class="portfolio-info">
+                <h4>Bed Availability Details</h4>
+                <div class="portfolio-links">
+                  <a href="bed.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/blog.jpg" class="img-fluid" alt="Covid YODHA" />
+              <div class="portfolio-info">
+                <h4>Blogs</h4>
+                <div class="portfolio-links">
+                  <a href="blogs.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Testimonials</h2>
+          <p>What they are saying about us</p>
+        </header>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Covid YODHA">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Covid YODHA">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div> -->
+    <!-- End testimonial item -->
+
+    <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Covid YODHA">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div> -->
+    <!-- End testimonial item -->
+
+    <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="Covid YODHA">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div> -->
+    <!-- End testimonial item -->
+
+    <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="Covid YODHA">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div> -->
+    <!-- End testimonial item -->
+
+    <!-- </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <!-- <div class="col-md-6">
+                  <div class="info-box">
+                    <a href="">
+                    <i class="bi bi-linkedin bx bxl-linkedin"></i>
+                    <h3>Linkedin</h3></a>
+                  </div>
+                </div> -->
+              <div class="col-md-6">
+                <div class="info-box">
+                  <center><a href="https://www.instagram.com/covidyodha_/?hl=en">
+                      <center><i class="bi bi-instagram bx bxl-instagram"></i></center>
+                      <h3>instagram</h3>
+                    </a></center>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <center><a href="bed.html">
+                      <center><i class="bi bi-facebook"></i></center>
+                      <h3>Facebook</h3>
+                    </a></center>
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <center><a href="https://twitter.com/YodhaCovid?s=09">
+                      <center><i class="bi bi-twitter"></i></center>
+                      <h3>Twitter</h3>
+                    </a></center>
+                </div>
+              </div>
+
+
+
+              <div class="col-md-6">
+                <div class="info-box">
+                  <center><a href="https://covidyodha.medium.com/">
+                      <center><i class="fab fa-medium-m" style="margin-top: 20px;"></i></center>
+                      <h3>Medium</h3>
+                    </a></center>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <center><a href="https://www.linkedin.com/company/covid-yodha/">
+                      <center><i class="bi bi-linkedin bx bxl-linkedin" style="margin-top: 20px;"></i></center>
+                      <h3>Linkedin</h3>
+                    </a></center>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <center><a href="https://anchor.fm/covid-yodha">
+                      <center><img src="assets/img/anchor.png"></i></center>
+                      <h3>Anchor</h3>
+                    </a></center>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <form id="contact-form" method="post" name="contact" data-netlify="true" class="php-email-form form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="required"
+                    data-error="name is required.">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="required"
+                    data-error="Valid email is required.">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="required"
+                    data-error="Subject is required.">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required="required"
+                    data-error="Please,leave us a message."></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit" onclick="myFunc()">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+
+    <!-- End Contact Section -->
+  </main>
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">×</div>
+      <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80"
+        href="https://in.pinterest.com/covidyodha/covidyodhaposts/"></a>
+    </div>
+  </div>
+  <!-- <div id="container" class="container">
+    <div id="chat" class="chat hidden">
+      <div id="messages" class="messages"></div>
+      <input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+    </div>
+    
+  </div> -->
+  <!-- <div class="chat_box" id="chat_box">
+    <div class="my-conv-form-wrapper" id="weapper">
+      <form action="" method="GET" class="hidden">
+
+        <select data-conv-question="Hello! How can I help you" name="category">
+          <option value="WebDevelopment">Website Development ?</option>
+          <option value="DigitalMarketing">Digital Marketing ?</option>
+        </select>
+
+        <div data-conv-fork="category">
+          <div data-conv-case="WebDevelopment">
+            <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">
+          </div>
+          <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+            <input type="text" name="companyName" data-conv-question="Please, enter your company name">
+          </div>
+        </div>
+
+        <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+        <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+        <input data-conv-question="Enter your e-mail"
+          data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+          type="email" name="email" required placeholder="What's your e-mail?">
+
+        <select data-conv-question="Please Conform">
+          <option value="Yes">Conform</option>
+        </select>
+
+      </form>
+    </div>
+  </div> -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Want to be part of our team</h4>
+
+            <div>
+              <a style="color: white"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdVIViiAOOmpzqO_OkJxNMz9ACvX2D_oC6i2qjTLT4LWFKOwA/viewform"
+                class="
+                    btn-read-more
+                    d-inline-flex
+                    align-items-center
+                    justify-content-center
+                    align-self-center
+                  ">
+                <span>Join us</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/covidlogo.png" alt="Covid YODHA" />
+            </a>
+            <p>
+              Nothing in life is to be feared, it is only to be understood.
+              Now is the time to understand more, so that we may fear less
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/YodhaCovid?s=09" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/covidyodha_/?hl=en" class="instagram"><i
+                  class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/covid-yodha/" class="linkedin"><i
+                  class="bi bi-linkedin bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i> <a href="/">Home</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <a href="#about1">About us</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <a href="./News.html">News</a>
+              </li>
+              <!--<li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+                </li>-->
+              <!-- <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li> -->
+              <!-- <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="/oxygen.html">Oxygen Cylinder</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="https://covidtracker1804.herokuapp.com/">Vaccine Availability Details</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="/magazine.html">Magazine</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="/bed.html">Bed Availability Details</a>
+              </li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+            </ul>
+          </div>
+
+          <div class="
+                col-lg-3 col-md-12
+                footer-contact
+                text-center text-md-start
+              ">
+            <h4>Contact Us</h4>
+            <!-- <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br /> -->
+            <!-- <strong>Phone:</strong> +1 5589 55488 55<br /> -->
+            <strong>Email:</strong> <br><a
+              href="mailto:information.covidyodha@gmail.com">information.covidyodha@gmail.com</a><br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>covidYODHA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">Designed by <a href="/team.html">covidYODHA Team</a></div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <div class="loader-container">
+    <div class="loader">
+      <img src="./assets/img/loder.gif" alt="Covid YODHA" />
+    </div>
+  </div>
+
+
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/vendor/purecounter/purecounter.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./assets/vendor/venobox/venobox.min.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.6.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/8.6.1/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <script>
+    function togglePopup() {
+      document.getElementById("popup-1").classList.toggle("active");
+    }
+    function chattogglePopup() {
+      document.getElementById("chatpopup-1").classList.toggle("active");
+      document.getElementById("chat_box").classList.toggle("active");
+      document.getElementById('wrapper').convform({ selectInputStyle: 'disable' })
+      //   $(document).ready(function () {
+      // $('.chat_icon').click(function () {
+      // 	$('.chat_box').toggleClass('active');
+      // });
+
+      // $('.my-conv-form-wrapper').convform({ selectInputStyle: 'disable' })
+      // });
+    }
+  </script>
+
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/constants.js"></script>
+  <script src="./assets/js/speech.js"></script>
+  <!-- Template Main JS File -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/preloader.js"></script>
+  <script async defer src="./assets/js/pinit.js"></script>
+
+</body>
+
+</html>

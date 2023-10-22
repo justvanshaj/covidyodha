@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Covid Yodha</title>
+
+    <meta content="" name="description" />
+
+    <meta content="CovidYODHA, covid, yodha, NGO" name="keywords" /> 
+    
+    <meta content="index,follow" name="robots" />
+
+    <link rel="icon" href="./assets/img/logo1.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="./assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="./assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
+
+
+    <!-- Template Main CSS File -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/podcast.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <div id="header" class="header fixed-top">
+        <div class="
+            container-fluid container-xl
+            d-flex
+            align-items-center
+            justify-content-between
+        ">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/covidlogo.png" style="margin-left: 8%;" alt="Covid YODHA" />
+                <!-- <span>CovidYodha</span> -->
+            </a>
+    
+            <div id="navbar" class="navbar align-items-center">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about1">About</a></li>
+                    <li>
+                        <a class="nav-link scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSdVIViiAOOmpzqO_OkJxNMz9ACvX2D_oC6i2qjTLT4LWFKOwA/viewform">Volunteer</a
+                >
+            </li>
+            <li><a href="team.html">Team</a></li>
+                    <!-- <li><a href="blogs.html">Blog</a></li> -->
+                    <li><a class="nav-link scrollto" href="./AdminPanel/AdminLogin/adminlogin.html">Login</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </div>
+            <!-- .navbar -->
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- <main  id="main">
+        <section>
+            <div>
+
+            </div>
+        </section>
+
+    </main> -->
+    <!-- <div id="root"></div> -->
+    <main id="main">
+      <div class="box">
+    <div class="player">
+      <p id="logo"><i class="fa fa-music"></i>Podcast</p>
+
+      <!--- left part --->
+      <div class="left">
+        <!--- song img --->
+        <img id="track_image" />
+        <div class="volume">
+          <p id="volume_show">100</p>
+          <i
+            class="fa fa-volume-up"
+            aria-hidden="true"
+            onclick="mute_sound()"
+            id="volume_icon"
+          ></i>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+            onchange="volume_change()"
+            id="volume"
+          />
+        </div>
+      </div>
+
+      <!--- right part --->
+      <div class="right">
+        <div class="show_song_no">
+          <p id="present" style="margin-bottom: 0px !important;">1</p>
+          <p>/</p>
+          <p id="total" style="margin-bottom: 0px !important;">5</p>
+        </div>
+
+        <!--- song title & artist name --->
+        <p id="title">title.mp3</p>
+        <p id="artist">Artist name</p>
+
+        <!--- middle part --->
+        <div class="middle">
+          <button onclick="previous_song()" id="pre">
+            <i class="fa fa-step-backward" aria-hidden="true"></i>
+          </button>
+          <button onclick="justplay()" id="play">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </button>
+          <button onclick="next_song()" id="next">
+            <i class="fa fa-step-forward" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!--- song duration part --->
+        <div class="duration">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="duration_slider"
+            onchange="change_duration()"
+          />
+        </div>
+        <button id="auto" onclick="autoplay_switch()" >
+          Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    </div>
+  </main>
+        <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+              <h4>Want to be part of our team</h4>
+
+              <div>
+                <a
+                  style="color: white"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdVIViiAOOmpzqO_OkJxNMz9ACvX2D_oC6i2qjTLT4LWFKOwA/viewform"
+                  class="
+                    btn-read-more
+                    d-inline-flex
+                    align-items-center
+                    justify-content-center
+                    align-self-center
+                  "
+                >
+                  <span>Join us</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/covidlogo.png" alt="Covid YODHA" />
+              </a>
+              <p>
+                Nothing in life is to be feared, it is only to be understood.
+                Now is the time to understand more, so that we may fear less
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/YodhaCovid?s=09" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/covidyodha_/?hl=en" class="instagram"
+                  ><i class="bi bi-instagram bx bxl-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/company/covid-yodha/" class="linkedin"
+                  ><i class="bi bi-linkedin bx bxl-linkedin"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="/">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#about1">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="./News.html">News</a>
+                </li>
+                <!--<li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+                </li>-->
+                <!-- <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li> -->
+                <!-- <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li> -->
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="/oxygen.html">Oxygen Cylinder</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="https://covidtracker1804.herokuapp.com/">Vaccine Availability Details</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="/magazine.html">Magazine</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="/bed.html">Bed Availability Details</a>
+                </li>
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+              </ul>
+            </div>
+
+            <div
+              class="
+                col-lg-3 col-md-12
+                footer-contact
+                text-center text-md-start
+              "
+            >
+              <h4>Contact Us</h4>
+              <!-- <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br /> -->
+                <!-- <strong>Phone:</strong> +1 5589 55488 55<br /> -->
+                <strong>Email:</strong> <br><a href="mailto:information.covidyodha@gmail.com">information.covidyodha@gmail.com</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>covidYODHA</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by <a href="/team.html">covidYODHA Team</a></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="loader-container">
+      <div class="loader">
+        <img src="./assets/img/loder.gif" alt="Covid YODHA" />
+      </div>
+    </div>
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/vendor/aos/aos.js"></script>
+    <script src="./assets/vendor/php-email-form/validate.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/purecounter/purecounter.js"></script>
+    <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./assets/vendor/venobox/venobox.min.js"></script>
+    <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.6.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/podcast.js"></script>
+</body>
+</html>
